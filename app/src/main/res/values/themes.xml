@@ -1,9 +1,10 @@
-<resources xmlns:nvtools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.StartingActivitesApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Startingactivitesapp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorSecondary">@color/my_light_Secondary</item> -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/grey</item>
     </style>
 
-    <style name="Theme.StartingActivitesApp" parent="Base.Theme.StartingActivitesApp" />
+    <style name="Theme.Startingactivitesapp" parent="Base.Theme.Startingactivitesapp" />
 </resources>
