@@ -5,35 +5,25 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Button;
-import android.widget.Toast;
-
-import com.example.startingactivitiesapp.R;
-
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 public class SecondActivity extends AppCompatActivity {
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private ActivityResultLauncher<Intent> cameraResult;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
@@ -74,6 +64,7 @@ public class SecondActivity extends AppCompatActivity {
         });
 
 
+
         btnPic.setOnClickListener(view -> {
             Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             cameraResult.launch(cameraIntent);
@@ -94,7 +85,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Log.w("Nidhi","Done pic1");
         Bitmap thumbnail=data.getParcelableExtra("data");
-        ImageView img=(ImageView) findViewById(R.id.imageView2);
+        ImageView img=(ImageView) findViewById(R.id.img1);
         img.setImageBitmap(thumbnail);
 
 

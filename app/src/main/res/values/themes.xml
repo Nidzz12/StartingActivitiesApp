@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.StartingActivitesApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- <item name="colorSecondary">@color/my_light_Secondary</item> -->
     </style>
 
     <style name="Theme.StartingActivitesApp" parent="Base.Theme.StartingActivitesApp" />

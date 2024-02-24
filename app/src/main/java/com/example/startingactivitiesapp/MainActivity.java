@@ -8,6 +8,8 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -53,9 +55,4 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.w("Main Activity","on Destroy");
     }
-
-
-
-
-
 }
